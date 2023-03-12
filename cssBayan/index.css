@@ -106,13 +106,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    opacity: 1;
 }
 
-
+.mem:hover {
+    opacity: 0.6;
+}
 
 .label {
     padding-top: 1rem;
 }
+
 
 .input:checked~.mem {
     display: block;
@@ -138,8 +142,7 @@ body {
     }
 
     body {
-
+        background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
         font-size: 0.7rem;
-
     }
 }
