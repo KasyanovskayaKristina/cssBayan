@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat:wght@600&display=swap');
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+    background: #FFFFFF;
+}
+
+.container {
+    padding: 0, 1rem;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.main {
+    max-width: 70%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.main {
+    font-family: 'Caveat', cursive;
+}
+
+.main:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.main:hover.close {
+    display: block;
+}
+
+.mem {
+    display: none;
+}
+
+.input {
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.bayan-mem {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+    height: 2rem;
+    border-radius: 3%;
+}
+
+.open {
+    display: none;
+}
+
+
+.bayan-mem:hover .open {
+    color: blue;
+    display: block;
+}
+
+.bayan-mem:hover {
+    color: blue;
+}
+
+
+
+.bayan-mem:hover~.mem {
+    display: block;
+}
+
+.bayan-mem:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mem {
+    width: calc(35vh);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+
+.label {
+    padding-top: 1rem;
+}
+
+.input:checked~.mem {
+    display: block;
+}
+
+.header {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 1180px) {
+    .header {
+        font-size: 1.5em;
+        font-family: 'Caveat', cursive;
+    }
+
+
+}
+
+@media only screen and (max-width: 568px) {
+    .header {
+        font-size: 0.7em;
+        font-family: 'Caveat', cursive;
+    }
+
+    body {
+
+        font-size: 0.7rem;
+
+    }
+}
